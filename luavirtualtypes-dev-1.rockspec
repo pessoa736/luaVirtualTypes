@@ -1,14 +1,12 @@
-package = "luavirtualtypes"
+package = "luaVirtualTypes"
 version = "dev-1"
-
 source = {
-   url = "https://github.com/pessoa736/luaVirtualTypes"
+   url = "git+https://github.com/pessoa736/luaVirtualTypes.git",
+   tag = "v0.0.1-1"
 }
-
 description = {
    license = "MIT"
 }
-
 dependencies = {
    "lua >= 5.4"
 }
