@@ -25,7 +25,7 @@ local Virtual_Type_Module <const> = {
     __AUTHOR = "davi/pessoa736",
     __LICENSE = "MIT",
     __DECRIPTION = "symbolics types in lua",
-    __VERSION = "0.1",
+    __VERSION = "0.0.1",
 }
 
 
