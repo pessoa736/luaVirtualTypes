@@ -1,11 +1,14 @@
-package = "luaVirtualTypes"
+package = "luavirtualtypes"
 version = "dev-1"
+
 source = {
-   url = "*** please add URL for source tarball, zip or repository here ***"
+   url = "https://github.com/pessoa736/luaVirtualTypes"
 }
+
 description = {
    license = "MIT"
 }
+
 dependencies = {
    "lua >= 5.4"
 }
@@ -15,7 +18,4 @@ build = {
    modules = {
       ["luaVirtualTypes"] = "source/init.lua",
    }
-}
-test_dependencies = {
-   queries = {}
 }
