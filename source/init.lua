@@ -1,4 +1,4 @@
----@version >5.4
+---@version: 5.4, 5.5
 
 if tonumber(_VERSION:sub(5)) < 5.4 then
     error("expected: lua >= 5.4 \n recive: " .. _VERSION)
@@ -46,7 +46,6 @@ function Virtual_Type_Module:vtype(obj)
     return type(obj)
 end
 
-
 ---@param obj any
 ---@param ... string|Virtual_Type_Default_Lua_Types
 ---@return boolean
@@ -59,7 +58,6 @@ function Virtual_Type_Module:MultOrVerify(obj, ...)
     end
     return false
 end
-
 
 ---@generic T: string
 ---@param obj table
@@ -77,10 +75,10 @@ function Virtual_Type_Module:set(obj, vt)
     return obj
 end
 
-
-setmetatable(Virtual_Type_Module,{
-    __call = function (t, val) return t:vtype(val) end
+setmetatable(Virtual_Type_Module, {
+    __call = function(t, val) return t:vtype(val) end
 })
 
 ---@cast Virtual_Type_Module +fun(obj: Virtual_Type_Obj<string>):string
 return Virtual_Type_Module
+
